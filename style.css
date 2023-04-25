@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.col {
+  flex: 1; /*spread evenly on the screean and take the entire space*/
+  background: #df3939;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: background 0.3s;
+}
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.col button {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
